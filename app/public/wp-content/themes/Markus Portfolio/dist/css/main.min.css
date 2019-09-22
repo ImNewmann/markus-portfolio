@@ -80,7 +80,7 @@ embed,iframe,img,object,video{max-width:100%}
 .section-animate--show .contact__info p:last-child{-webkit-animation-name:slideInUp;animation-name:slideInUp;-webkit-animation-delay:.5s;animation-delay:.5s}
 .section-animate--show .social-media--contact,.section-animate--show footer{-webkit-animation-name:slideInUp;animation-name:slideInUp;-webkit-animation-timing-function:ease;animation-timing-function:ease;-webkit-animation-duration:.7s;animation-duration:.7s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-delay:.65s;animation-delay:.65s}
 .section-animate--show footer{-webkit-animation-delay:.8s;animation-delay:.8s}
-.navigation{opacity:0;position:fixed;top:0;left:0;right:0;padding:5px;color:#ecebe9;z-index:3;max-width:1550px;width:100%;-webkit-transition:opacity .4s linear,width .3s,background .3s .2s;transition:opacity .4s linear,width .3s,background .3s .2s;margin:0 auto;background:rgba(0,0,0,0.2)}
+.navigation{opacity:0;position:fixed;top:0;left:0;padding:5px;color:#ecebe9;z-index:3;max-width:1550px;-webkit-transition:opacity .4s linear,width .3s,background .3s .2s;transition:opacity .4s linear,width .3s,background .3s .2s;margin:0 auto;background:rgba(0,0,0,0.2)}
 .navigation:after{content:'';position:absolute;bottom:0;height:1px;width:100%;left:0;background-color:#ecebe9;-webkit-transition:-webkit-transform .25s ease-in .1s;transition:-webkit-transform .25s ease-in .1s;transition:transform .25s ease-in .1s;transition:transform .25s ease-in .1s,-webkit-transform .25s ease-in .1s;-webkit-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0)}
 .navigation__logo{display:inline-block}
 .navigation__logo h2{font-size:36px;padding:4px;font-weight:100;color:#ecebe9;letter-spacing:3px;display:inline-block}
@@ -138,7 +138,7 @@ embed,iframe,img,object,video{max-width:100%}
 .song-wrapper:hover{opacity:1 !important}
 .song__name{display:block;font-size:18px;font-family:'Nothing You Could Do',cursive}
 .song__artist{font-size:12px;font-weight:400;color:inherit;letter-spacing:5px;text-transform:uppercase}
-progress{display:block;background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);margin-bottom:10px;width:100%;border:0;height:6px;cursor:pointer}
+progress{display:block;background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);margin-bottom:10px;width:100%;border:0;height:12px;cursor:pointer}
 progress::-webkit-progress-bar{background:rgba(255,255,255,0.1)}
 progress::-webkit-progress-value{background:rgba(255,255,255,0.8)}
 progress::-moz-progress-bar{background:rgba(255,255,255,0.8)}
@@ -263,6 +263,7 @@ footer{bottom:15px;font-size:18px}
 .social-media{bottom:-74px;left:-23px}
 .music-player__artwork{height:400px}
 .music-player__track-list{max-height:435px}
+progress{height:6px}
 .video__thumbnail{width:50%}
 .video-info{margin-left:50px;max-width:calc(30% - 15px)}
 .contact__content{float:right}
@@ -279,7 +280,8 @@ footer{bottom:15px;font-size:18px}
 .music-player__track-list{max-height:530px}
 .video{margin-bottom:50px}
 .video__thumbnail{width:55%}
-}@media(max-width:599px){.navigation--show{opacity:1}
+}@media(max-width:599px){.navigation{width:100%;right:0}
+.navigation--show{opacity:1}
 .mobile-nav--open{overflow:hidden}
 .mobile-nav--open .mobile-overlay{visibility:visible;opacity:.8;-webkit-transition:opacity .3s ease-in,visibility .3s ease-in;transition:opacity .3s ease-in,visibility .3s ease-in}
 .mobile-nav--open .navigation{color:#ecebe9;width:90%;-webkit-transition:width .3s,background .1s;transition:width .3s,background .1s;background:rgba(0,0,0,0)}
