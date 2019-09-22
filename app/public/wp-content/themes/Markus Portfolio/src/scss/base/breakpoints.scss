@@ -10,7 +10,7 @@
      @media (max-width: 599px)  { @content ; }
   } 
   @else if $point == ltdesktop {
-     @media (min-width: 1400px) { @content ; }
+     @media (min-width: 1921px) { @content ; }
   }
 
   @else if $point == tabletLargePortrait {
