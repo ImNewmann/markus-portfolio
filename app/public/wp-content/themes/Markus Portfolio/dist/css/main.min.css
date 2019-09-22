@@ -138,7 +138,7 @@ embed,iframe,img,object,video{max-width:100%}
 .song-wrapper:hover{opacity:1 !important}
 .song__name{display:block;font-size:18px;font-family:'Nothing You Could Do',cursive}
 .song__artist{font-size:12px;font-weight:400;color:inherit;letter-spacing:5px;text-transform:uppercase}
-progress{display:block;background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);margin-bottom:10px;width:100%;border:0;height:12px;cursor:pointer}
+progress{display:block;background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);margin-bottom:10px;width:100%;border:0;height:10px;cursor:pointer}
 progress::-webkit-progress-bar{background:rgba(255,255,255,0.1)}
 progress::-webkit-progress-value{background:rgba(255,255,255,0.8)}
 progress::-moz-progress-bar{background:rgba(255,255,255,0.8)}

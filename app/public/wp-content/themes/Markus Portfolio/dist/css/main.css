@@ -610,7 +610,7 @@ embed, iframe, img, object, video { max-width: 100%; }
 
 .song__artist { font-size: 12px; font-weight: 400; color: inherit; letter-spacing: 5px; text-transform: uppercase; }
 
-progress { display: block; background: rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.8); margin-bottom: 10px; width: 100%; border: none; height: 12px; cursor: pointer; }
+progress { display: block; background: rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.8); margin-bottom: 10px; width: 100%; border: none; height: 10px; cursor: pointer; }
 
 @media (min-width: 1025px) { progress { height: 6px; } }
 
