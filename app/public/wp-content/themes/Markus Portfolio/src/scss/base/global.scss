@@ -1,0 +1,114 @@
+html {
+    font-family: 'Bebas', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow-x: hidden;
+}
+
+footer {
+    opacity: 0;
+}
+
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 60px;
+
+    @include breakpoint(tablet) {
+        padding-top: 0;
+    }
+
+    @include breakpoint (desktop) {
+        max-width: 800px;
+    }
+
+    @include breakpoint(ltdesktop) {
+        max-width: 1000px;
+    }
+
+    @include breakpoint(tabletLargeLandscape) {
+        max-width: 1200px;
+    }
+}
+.section {
+    position: relative;
+    padding: 0 10px;
+
+    @include breakpoint(tablet) {
+        padding: 25px;
+    }
+
+    @include breakpoint(desktop) {
+        padding: 15px;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        padding: 50px 25px;
+    }
+
+    &__header {
+        color: $off-white;
+        font-weight: 100;
+        font-size: 70px;
+        margin-bottom: 20px;
+
+        @include breakpoint(tablet) {
+            font-size: 100px;
+            text-align: center;
+        }
+
+        @include breakpoint(desktop) {
+            font-size: 80px;
+            margin: 10px 0;
+            text-align: right;
+        }
+
+        @include breakpoint(ltdesktop) {
+            margin: 25px 0;
+            font-size: 120px;
+        }
+
+        @include breakpoint(tabletLargeLandscape) {
+            margin: 25px 0;
+            font-size: 120px;        
+        }
+
+        &--video {
+            @include breakpoint(tablet) {
+                text-align: center;
+            }
+
+            @include breakpoint(desktop) {
+                text-align: left;
+            }
+        }
+
+        &--contact {
+            text-align: center;
+
+            @include breakpoint(tablet) {
+                text-align: left;
+                margin-bottom: 30px;
+                margin-top: 0;
+            }
+        }
+    }
+}
+.section-animate {
+    .section__header {
+        opacity: 0;
+    }
+}
+
+.iScrollVerticalScrollbar {
+    display: none !important;
+}
+

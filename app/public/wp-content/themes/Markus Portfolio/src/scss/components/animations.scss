@@ -1,0 +1,186 @@
+// LANDING PAGE
+.image-loading {
+    .hero {
+        opacity: 0;
+    }
+
+    .lds-dual-ring {
+        opacity: 1;
+    }
+} 
+
+.image-loaded {
+    .hero {
+        opacity: 1;
+
+        &__text {
+            h1 {
+                animation-name: longSlideRight; 
+                animation-timing-function: ease;
+                animation-duration: .65s;
+                animation-delay: 0s;
+                animation-fill-mode: forwards;
+
+                @include breakpoint (tablet) {
+                    animation-delay: .7s;
+                }
+            }
+
+            &:before {
+                animation-name: line;
+                animation-timing-function: ease-in-out;
+                animation-duration: 1s;
+                animation-delay: 0.2s;
+                animation-fill-mode: forwards;
+            }
+
+            &-tagline {
+                h2 {
+                    opacity: 0;
+                    animation-name: slideInUp;
+                    animation-timing-function: cubic-bezier(0.47,-0.2, 0.62, 1.29);
+                    animation-duration: 0.5s;
+                    animation-delay: 0.6s;
+                    animation-fill-mode: forwards;
+
+                    @include breakpoint (tablet) {
+                        animation-delay: 0.9s;
+                    }
+                }
+            }
+        }
+
+        .social-media__icon {
+            opacity: 0;
+            animation-name: fadeInTransformLeft;
+            animation-timing-function: cubic-bezier(0.47,-0.2, 0.62, 1.29); 
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+
+            &:nth-child(1) {
+                animation-delay: 1.2s;
+            }
+
+            &:nth-child(2) {
+                animation-delay: 1.3s;
+            }
+
+            &:nth-child(3) {
+                animation-delay: 1.4s;
+            }
+
+            &:nth-child(4) {
+                animation-delay: 1.5s;
+            }
+        }
+
+        &__scroll {
+            opacity: 1;
+            transition: opacity;
+            transition-duration: 1.2s;
+            transition-timing-function: ease;
+            transition-delay: 1s;
+            animation-fill-mode: forwards;
+            @include breakpoint (tablet) {
+                transition-delay: 2s;
+                transition-duration: 0.8s;
+            }
+        }
+    }
+    .lds-dual-ring {
+        opacity: 0;
+    }
+}
+
+.section-animate--show { 
+
+    // SECTION HEADERS
+    .section__header {
+        animation-name: slideInLeft;
+        animation-timing-function: ease; 
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+
+        &--video {
+            animation-name: slideInRight;
+        }
+    }
+
+    // MUSIC PAGE
+    .music-player__artwork {
+        animation-name: slideInRight;
+        animation-timing-function: ease; 
+        animation-duration: .7s;
+        animation-delay: .35s;
+        animation-fill-mode: forwards;
+    }
+
+    .song {
+      animation: fadeInSongs .6s ease;
+      animation-fill-mode: forwards;
+    }
+
+    // VIDEO PAGE
+    .video {
+        &__thumbnail {
+            animation-name: slideInRight;
+            animation-timing-function: ease; 
+            animation-duration: .7s;
+            animation-fill-mode: forwards;
+        }
+
+        &-info {
+            &__title {
+                animation-name: slideInLeft;
+                animation-timing-function: ease; 
+                animation-duration: .7s;
+                animation-fill-mode: forwards;
+            }
+
+            &__description p {
+                animation-timing-function: ease; 
+                animation-duration: .7s;
+                animation-fill-mode: forwards;
+
+                &:first-child {
+                    animation-name: slideInRight;
+                }
+
+                &:last-child {
+                    animation-name: slideInUp;
+                }
+            }
+        }
+    }
+
+    // CONTACT PAGE
+    .contact__info {
+        p {
+            animation-timing-function: ease; 
+            animation-duration: .7s;
+            animation-fill-mode: forwards;
+
+            &:first-child {
+                animation-name: slideInUp;
+                animation-delay: .35s;
+            }
+
+            &:last-child {
+                animation-name: slideInUp;
+                animation-delay: .5s;
+            }
+        }
+    }
+
+    .social-media--contact, footer {
+        animation-name: slideInUp;
+        animation-timing-function: ease; 
+        animation-duration: .7s;
+        animation-fill-mode: forwards;
+        animation-delay: .65s;
+    }
+
+    footer {
+        animation-delay: .8s;
+    }
+}

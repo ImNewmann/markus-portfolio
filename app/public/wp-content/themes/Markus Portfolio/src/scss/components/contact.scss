@@ -1,0 +1,72 @@
+.contact {
+    &__text {
+        font-family: 'Roboto Condensed';
+        color: $off-white;
+        font-size: 22px;
+        text-align: center;
+        @include breakpoint(tablet) {
+            text-align: left;
+        }
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    &__content {
+        @include breakpoint(tablet) {
+            width: 60%;
+            float: left;
+            position: relative;
+            top: 35%;
+            transform: translateY(-50%);
+        }
+        @include breakpoint(desktop) {
+            float: right;
+        }
+    }
+}
+
+
+@include breakpoint(tablet) {
+    .contact {
+        display: flex;
+    }
+    .wrapper--contact {
+        width: 100%;
+    }
+}
+
+@include breakpoint(tabletLargeLandscape) {
+    .wrapper--contact {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 0%;
+    }
+}
+
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: $off-white;
+    letter-spacing: 3px;
+    font-size: 14px;   
+
+    @include breakpoint(tablet) {
+        bottom: 15px;
+        font-size: 18px;
+    }
+}
+
+.section-animate .contact__text p {
+    opacity: 0;
+}

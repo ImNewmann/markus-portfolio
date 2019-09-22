@@ -1,0 +1,25 @@
+/*
+Theme Name: Blueprint
+Author: Ben Newman
+Version: 1.0
+*/
+
+//Setting up
+@import 'base/fonts.scss';
+@import 'base/breakpoints';
+@import 'base/variables';
+@import 'base/keyframes';
+@import 'base/global';
+@import 'base/normalize';
+@import 'base/base';
+
+@import 'base/breakpoints';
+@import 'components/fixed-background';
+@import 'components/animations';
+@import 'components/header-nav';
+@import 'components/landing-screen';
+@import 'components/social-media';
+@import 'components/music-player';
+@import 'components/video-grid';
+@import 'components/contact';
+

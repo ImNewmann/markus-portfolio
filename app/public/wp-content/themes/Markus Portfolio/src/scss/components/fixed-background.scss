@@ -1,0 +1,63 @@
+.fixed-bg {
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.5s, transform .6s .6s;
+    opacity: 0;
+    transform: scale(1) translate3D(0, 0, 0);
+    right: 0;
+    top: 0;
+    will-change: transform;
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+        background-position: 20%;
+    }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        background-position: -110%;
+        transform: scale(1.4);
+    }
+
+    @include breakpoint(desktop) {
+        background-position: center 80%;
+    }
+
+    @include breakpoint(ltdesktop) {
+        background-position: center center;
+    }
+}
+
+.image-loading {
+    .fixed-bg {
+        opacity: 0;
+    }
+}
+.image-loaded {
+    .fixed-bg {
+        opacity: 1;
+    }
+}
+
+.fixed-bg.section4 {
+    @include breakpoint(tablet) {
+        transition: transform .6s .6s;
+        transform: scale(1.5) translate3D(-15%, -5%, 0);
+    }
+    @include breakpoint(desktop) {
+        transform: scale(1.35) translate3D(-12%, -1%, 0);
+    }
+    @include breakpoint(ltdesktop) {
+        transform: scale(1.4) translate3D(-14%, -5%, 0);
+    }
+}
+
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .2);
+}
