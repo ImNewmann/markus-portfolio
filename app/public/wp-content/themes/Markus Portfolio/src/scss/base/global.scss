@@ -27,16 +27,16 @@ footer {
     }
 
     @include breakpoint (desktop) {
-        max-width: 800px;
+        max-width: 52vw;
     }
 
-    @include breakpoint(ltdesktop) {
-        max-width: 1000px;
-    }
+    // @include breakpoint(ltdesktop) {
+    //     max-width: 1000px;
+    // }
 
-    @include breakpoint(tabletLargeLandscape) {
-        max-width: 1200px;
-    }
+    // @include breakpoint(tabletLargeLandscape) {
+    //     max-width: 1200px;
+    // }
 }
 .section {
     position: relative;
@@ -47,11 +47,7 @@ footer {
     }
 
     @include breakpoint(desktop) {
-        padding: 15px;
-    }
-
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-        padding: 50px 25px;
+        padding: 0;
     }
 
     &__header {
@@ -73,7 +69,7 @@ footer {
 
         @include breakpoint(ltdesktop) {
             margin: 25px 0;
-            font-size: 120px;
+            font-size: 100px;
         }
 
         @include breakpoint(tabletLargeLandscape) {

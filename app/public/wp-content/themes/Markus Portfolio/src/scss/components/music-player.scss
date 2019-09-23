@@ -23,7 +23,7 @@
     }
 
     @include breakpoint(desktop) {
-      height: 400px;
+      height: 358px;
     }
 
     @include breakpoint(ltdesktop) {
@@ -57,18 +57,10 @@
       padding-left: 5%;
       overflow-y: scroll;
       height: 100%;
-      max-height: 530px;
+      max-height: 72vh;
       -ms-overflow-style: none;
       -webkit-mask-image: linear-gradient(to top, transparent, black 5%);
       mask-image: linear-gradient(to top, transparent, black 5%);
-    }
-
-    @include breakpoint(desktop) {
-      max-height: 435px;
-    }
-
-    @include breakpoint(ltdesktop) {
-      max-height: 530px;
     }
   }
 }

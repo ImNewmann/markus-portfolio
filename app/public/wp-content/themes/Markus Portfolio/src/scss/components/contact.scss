@@ -24,7 +24,7 @@
             float: left;
             position: relative;
             top: 35%;
-            transform: translateY(-50%);
+            transform: translateY(-120px);
         }
         @include breakpoint(desktop) {
             float: right;
