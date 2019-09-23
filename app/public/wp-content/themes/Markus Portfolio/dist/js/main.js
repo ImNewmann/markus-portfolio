@@ -36,7 +36,7 @@ jQuery(document).ready(function( $ ) {
         //options here
         scrollOverflow: true,
         normalScrollElements: (isMobile ? '' : '.music-player__track-list'),
-        verticalCentered: true,
+        verticalCentered: !isMobile,
         easingcss3: 'cubic-bezier(0.77, 0, 0.175, 1)',
         scrollingSpeed: 1200,
         fixedElements: '.navigation',
