@@ -6,7 +6,7 @@ jQuery(document).ready(function( $ ) {
     var $navigation = $('.navigation')
     var $hamburger = $navigation.find('.hamburger')
     var $navigationLinks = $navigation.find('.navigation__link')
-    var soundCloudClient = '9yZSvlXAK7Wmu4xhb0hdMtjP9D2z351X'
+    var soundCloudClient = '95f22ed54a5c297b1c41f72d713623ef'
     var playButton = $('.play-button')
     var progressBars = $('.song-played-progress')
     var musicPlayer = $('.music-player')
