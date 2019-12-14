@@ -141,6 +141,7 @@ function waitForEl(selector, callback, maxtries, interval) {
         callback(el || null)
     }, interval)
 }
+
 // Hover colors for social media
 var socialMediaIcon = $('.social-media a i')
 socialMediaIcon.hover(

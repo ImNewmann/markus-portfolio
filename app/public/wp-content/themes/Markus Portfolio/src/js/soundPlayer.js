@@ -1,7 +1,6 @@
 var musicPlayer = $('.music-player')
 var duration = $('.amplitude-time-remaining')
 var songs = $('.song')
-var soundCloudClient = 'r4nH5X72hWzUcXFiXFCBs275NbNMSF8Y'
 var playButton = $('.play-button')
 var progressBars = $('.song-played-progress')
 var songUrls = []
@@ -38,10 +37,7 @@ songs.each(function (i, song) {
     songUrls[i] = { "url": songUrl }
 })
 
-Amplitude.init({
-    "songs": songUrls,
-    "soundcloud_client": soundCloudClient
-})
+Amplitude.init({"songs": songUrls})
 
 
 function audioPlaying () {
