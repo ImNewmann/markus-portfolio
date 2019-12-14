@@ -9,12 +9,12 @@ function website_styles() {
 }
 
 function website_scripts(){
-    wp_enqueue_script('easing', '//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array('jquery'));
-    wp_enqueue_script('fullpage', '//cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js');
-    wp_enqueue_script('overflow', '//cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/scrolloverflow.js');
-    wp_enqueue_script('featherlight', '//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js', array('jquery'));
-    wp_enqueue_script('amplitude', '//cdn.jsdelivr.net/npm/amplitudejs@v3.3.0/dist/amplitude.js');
-    wp_enqueue_script('website_main_js', get_template_directory_uri() . '/dist/js/main.js', array('jquery') , microtime());
+    wp_register_script('easing', '//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js');
+    wp_register_script('fullpage', '//cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js');
+    wp_register_script('overflow', '//cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/scrolloverflow.js');
+    wp_register_script('featherlight', '//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js');
+    wp_register_script('amplitude', '//cdn.jsdelivr.net/npm/amplitudejs@v3.3.0/dist/amplitude.js');
+    wp_enqueue_script('website_main_js', get_template_directory_uri() . '/dist/js/main.js', array('easing', 'fullpage', 'overflow', 'featherlight', 'amplitude'), microtime(), true);
 }
 
 add_action('wp_enqueue_scripts', 'website_styles');
