@@ -1,4 +1,5 @@
 jQuery(document).ready(function( $ ) {
+    console.log('deploy linked to github')
     
     //GLOBAL VARIABLES
     var landingPage = $('.landing-page')
