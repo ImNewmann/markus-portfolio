@@ -23,7 +23,7 @@
                 <?php include ("contact.php") ?>
             </div> 
         </div>
-        <footer><span>Website created by Ben Newman</span></footer>
+        <footer><span><a href="http://www.bnewman.co.uk" target="_blank">Website created by Ben Newman</a></span></footer>
     </section>
 </div>
 <?php get_footer(); ?> 
